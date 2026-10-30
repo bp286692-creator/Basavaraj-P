@@ -1,0 +1,2933 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artisan Crumb Bakery & Patisserie | Handcrafted Sourdough & Viennoiserie Bengaluru</title>
+  <meta name="description" content="Boutique artisanal bakery in Indiranagar, Bengaluru. Slow 36-hour wild ferment sourdough, French viennoiserie, celebration cakes, and direct WhatsApp ordering." />
+  
+  <!-- Open Graph / Social Media Cards -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Artisan Crumb Bakery & Patisserie | Bengaluru" />
+  <meta property="og:description" content="Handcrafted wild-ferment sourdough, buttery Parisian croissants & bespoke celebration cakes in Indiranagar, Bengaluru." />
+  <meta property="og:image" content="/src/assets/images/hero_bakery_artisan_1793337115115.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Artisan Crumb Bakery & Patisserie | Bengaluru" />
+  <meta name="twitter:description" content="Handcrafted wild-ferment sourdough & French viennoiserie baked fresh daily in Indiranagar, Bengaluru." />
+  <meta name="twitter:image" content="/src/assets/images/hero_bakery_artisan_1793337115115.jpg" />
+
+  <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ==========================================================================
+       DESIGN SYSTEM & CSS VARIABLES (LIGHT / DARK THEMES)
+       ========================================================================== */
+    :root {
+      /* Light Mode Palette: Warm Cream, Deep Emerald, Golden Amber */
+      --color-bg: #f8f6f0;
+      --color-surface: #ffffff;
+      --color-surface-subtle: #f2eee3;
+      --color-surface-elevated: #ffffff;
+      --color-surface-glass: rgba(255, 255, 255, 0.90);
+      
+      --color-text-primary: #18241d;
+      --color-text-secondary: #4a5c51;
+      --color-text-muted: #788a7e;
+      --color-text-inverse: #fdfdfc;
+      
+      --color-brand-primary: #1b4332;
+      --color-brand-hover: #133426;
+      --color-brand-surface: #e9f2ec;
+      
+      --color-accent-gold: #c69239;
+      --color-accent-gold-hover: #ad7c2b;
+      --color-accent-gold-subtle: #fbf5e8;
+      
+      --color-border: rgba(27, 67, 50, 0.12);
+      --color-border-subtle: rgba(27, 67, 50, 0.06);
+      
+      --shadow-sm: 0 2px 8px rgba(27, 67, 50, 0.04);
+      --shadow-md: 0 10px 24px -6px rgba(27, 67, 50, 0.08);
+      --shadow-lg: 0 20px 40px -10px rgba(27, 67, 50, 0.14);
+      
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 20px;
+      --radius-full: 9999px;
+      
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      --font-mono: 'Space Mono', monospace;
+      
+      --header-height: 72px;
+      --transition-smooth: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    [data-theme="dark"] {
+      /* Dark Mode Palette: Obsidian Emerald, Warm Ivory, Radiant Brass */
+      --color-bg: #0d1712;
+      --color-surface: #14231b;
+      --color-surface-subtle: #192c22;
+      --color-surface-elevated: #1f362a;
+      --color-surface-glass: rgba(20, 35, 27, 0.92);
+      
+      --color-text-primary: #f5f7f4;
+      --color-text-secondary: #abb8af;
+      --color-text-muted: #77887d;
+      --color-text-inverse: #101c15;
+      
+      --color-brand-primary: #347a59;
+      --color-brand-hover: #40926b;
+      --color-brand-surface: #163224;
+      
+      --color-accent-gold: #e2b25c;
+      --color-accent-gold-hover: #f0c371;
+      --color-accent-gold-subtle: rgba(226, 178, 92, 0.14);
+      
+      --color-border: rgba(255, 255, 255, 0.12);
+      --color-border-subtle: rgba(255, 255, 255, 0.06);
+      
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 10px 24px -6px rgba(0, 0, 0, 0.5);
+      --shadow-lg: 0 20px 40px -10px rgba(0, 0, 0, 0.7);
+    }
+
+    /* ==========================================================================
+       RESET & BASE STYLES
+       ========================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--color-bg);
+      color: var(--color-text-primary);
+      line-height: 1.6;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button, input, textarea, select {
+      font: inherit;
+      color: inherit;
+      border: none;
+      background: none;
+      outline: none;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--color-accent-gold);
+      outline-offset: 3px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1240px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+
+    .tabular-nums {
+      font-variant-numeric: tabular-nums;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-display);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--color-text-primary);
+      text-wrap: balance;
+    }
+
+    /* ==========================================================================
+       ANNOUNCEMENT BAR
+       ========================================================================== */
+    .announcement-bar {
+      background-color: var(--color-brand-primary);
+      color: #f7f9f6;
+      font-size: 0.8125rem;
+      letter-spacing: 0.02em;
+      padding: 0.5rem 1rem;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .announcement-bar span.accent {
+      color: var(--color-accent-gold);
+      font-weight: 600;
+    }
+    .announcement-bar .dot {
+      opacity: 0.5;
+    }
+
+    /* ==========================================================================
+       STICKY HEADER & 3-ZONE TOP BAR CONTRACT
+       ========================================================================== */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 90;
+      height: var(--header-height);
+      background-color: var(--color-surface-glass);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--color-border);
+      transition: var(--transition-smooth);
+    }
+
+    .nav-container {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    /* Zone 1: Single-element Brand Wordmark */
+    .brand-wordmark {
+      display: flex;
+      align-items: center;
+      gap: 0.625rem;
+      font-family: var(--font-display);
+      font-size: 1.375rem;
+      font-weight: 700;
+      color: var(--color-brand-primary);
+      letter-spacing: -0.01em;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    [data-theme="dark"] .brand-wordmark {
+      color: var(--color-text-primary);
+    }
+    .brand-icon {
+      width: 28px;
+      height: 28px;
+      fill: var(--color-accent-gold);
+    }
+
+    /* Zone 2: Navigation Links (single-line, subtle underlines) */
+    .nav-menu {
+      display: none;
+      align-items: center;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    @media (min-width: 900px) {
+      .nav-menu {
+        display: flex;
+      }
+    }
+
+    .nav-link {
+      font-size: 0.9375rem;
+      font-weight: 500;
+      color: var(--color-text-secondary);
+      white-space: nowrap;
+      position: relative;
+      padding: 0.375rem 0;
+      transition: color 0.2s ease;
+    }
+
+    .nav-link:hover {
+      color: var(--color-brand-primary);
+    }
+    [data-theme="dark"] .nav-link:hover {
+      color: var(--color-accent-gold);
+    }
+
+    .nav-link.active {
+      color: var(--color-brand-primary);
+      font-weight: 600;
+    }
+    [data-theme="dark"] .nav-link.active {
+      color: var(--color-accent-gold);
+    }
+    .nav-link.active::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: var(--color-accent-gold);
+      border-radius: 2px;
+    }
+
+    /* Zone 3: Header Actions */
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.875rem;
+      flex-shrink: 0;
+    }
+
+    .theme-toggle-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-full);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--color-surface-subtle);
+      border: 1px solid var(--color-border);
+      color: var(--color-text-primary);
+      transition: var(--transition-smooth);
+    }
+    .theme-toggle-btn:hover {
+      background-color: var(--color-border);
+    }
+    .theme-toggle-btn svg {
+      width: 19px;
+      height: 19px;
+    }
+
+    .cart-trigger-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: var(--color-surface-subtle);
+      border: 1px solid var(--color-border);
+      color: var(--color-text-primary);
+      font-weight: 600;
+      font-size: 0.875rem;
+      padding: 0.5rem 0.875rem;
+      border-radius: var(--radius-full);
+      transition: var(--transition-smooth);
+    }
+    .cart-trigger-btn:hover {
+      border-color: var(--color-accent-gold);
+      color: var(--color-brand-primary);
+    }
+    .cart-count {
+      background-color: var(--color-brand-primary);
+      color: #ffffff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      min-width: 20px;
+      height: 20px;
+      border-radius: 10px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 4px;
+    }
+    [data-theme="dark"] .cart-count {
+      background-color: var(--color-accent-gold);
+      color: #101c15;
+    }
+
+    .cta-btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      background-color: var(--color-brand-primary);
+      color: #ffffff;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      padding: 0.625rem 1.25rem;
+      border-radius: var(--radius-sm);
+      white-space: nowrap;
+      transition: var(--transition-smooth);
+      box-shadow: var(--shadow-sm);
+    }
+    .cta-btn-primary:hover {
+      background-color: var(--color-brand-hover);
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-md);
+    }
+    [data-theme="dark"] .cta-btn-primary {
+      background-color: var(--color-accent-gold);
+      color: #0e1913;
+    }
+    [data-theme="dark"] .cta-btn-primary:hover {
+      background-color: var(--color-accent-gold-hover);
+    }
+
+    .cta-btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      background-color: transparent;
+      color: var(--color-text-primary);
+      font-size: 0.9375rem;
+      font-weight: 600;
+      padding: 0.625rem 1.25rem;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      white-space: nowrap;
+      transition: var(--transition-smooth);
+    }
+    .cta-btn-secondary:hover {
+      background-color: var(--color-surface-subtle);
+      border-color: var(--color-text-secondary);
+    }
+
+    .mobile-menu-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--color-border);
+      background-color: var(--color-surface);
+      color: var(--color-text-primary);
+    }
+    @media (min-width: 900px) {
+      .mobile-menu-btn {
+        display: none;
+      }
+    }
+
+    /* Mobile Sheet Menu */
+    .mobile-nav-drawer {
+      position: fixed;
+      top: var(--header-height);
+      left: 0;
+      right: 0;
+      background-color: var(--color-surface);
+      border-bottom: 1px solid var(--color-border);
+      padding: 1.5rem;
+      display: none;
+      flex-direction: column;
+      gap: 1.25rem;
+      z-index: 89;
+      box-shadow: var(--shadow-lg);
+    }
+    .mobile-nav-drawer.open {
+      display: flex;
+    }
+    .mobile-nav-link {
+      font-size: 1.125rem;
+      font-weight: 600;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--color-border-subtle);
+      color: var(--color-text-primary);
+    }
+
+    /* ==========================================================================
+       HERO SECTION
+       ========================================================================== */
+    .hero-section {
+      padding-top: 3.5rem;
+      padding-bottom: 4.5rem;
+      position: relative;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    @media (min-width: 992px) {
+      .hero-grid {
+        grid-template-columns: 1.1fr 1fr;
+        gap: 3.5rem;
+      }
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--color-accent-gold);
+      margin-bottom: 1rem;
+    }
+    .hero-eyebrow-line {
+      width: 24px;
+      height: 1px;
+      background-color: var(--color-accent-gold);
+    }
+
+    .hero-headline {
+      font-size: clamp(2.35rem, 4.5vw, 3.75rem);
+      font-weight: 800;
+      line-height: 1.12;
+      color: var(--color-text-primary);
+      margin-bottom: 1.25rem;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-subheadline {
+      font-size: 1.125rem;
+      color: var(--color-text-secondary);
+      line-height: 1.65;
+      margin-bottom: 2rem;
+      max-width: 580px;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+
+    /* Trust Proof Metrics Strip */
+    .trust-strip {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
+      padding-top: 1.75rem;
+      border-top: 1px solid var(--color-border);
+    }
+    @media (min-width: 600px) {
+      .trust-strip {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    .trust-item {
+      display: flex;
+      flex-direction: column;
+    }
+    .trust-number {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--color-brand-primary);
+      line-height: 1.1;
+    }
+    [data-theme="dark"] .trust-number {
+      color: var(--color-accent-gold);
+    }
+    .trust-label {
+      font-size: 0.8125rem;
+      color: var(--color-text-muted);
+      margin-top: 0.25rem;
+    }
+
+    /* Hero Media Visual */
+    .hero-media-wrapper {
+      position: relative;
+    }
+    .hero-image-frame {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--color-border);
+      position: relative;
+      aspect-ratio: 16 / 10;
+      background-color: var(--color-surface-subtle);
+    }
+    .hero-image-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .hero-image-frame:hover img {
+      transform: scale(1.02);
+    }
+
+    /* Floating Status Card on Hero */
+    .hero-badge-floating {
+      position: absolute;
+      bottom: -1rem;
+      left: 1.5rem;
+      background-color: var(--color-surface);
+      border: 1px solid var(--color-border);
+      padding: 0.875rem 1.25rem;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-md);
+      display: flex;
+      align-items: center;
+      gap: 0.875rem;
+      max-width: calc(100% - 3rem);
+    }
+    .status-indicator-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius-sm);
+      background-color: var(--color-brand-surface);
+      color: var(--color-brand-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    [data-theme="dark"] .status-indicator-icon {
+      color: var(--color-accent-gold);
+    }
+    .status-badge-title {
+      font-size: 0.875rem;
+      font-weight: 700;
+      color: var(--color-text-primary);
+      line-height: 1.2;
+    }
+    .status-badge-desc {
+      font-size: 0.75rem;
+      color: var(--color-text-muted);
+    }
+
+    /* ==========================================================================
+       ABOUT & CRAFTSMANSHIP SECTION
+       ========================================================================== */
+    .about-section {
+      padding: 5.5rem 0;
+      background-color: var(--color-surface-subtle);
+      border-top: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 3.5rem auto;
+    }
+    .section-kicker {
+      font-size: 0.8125rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--color-accent-gold);
+      margin-bottom: 0.75rem;
+    }
+    .section-title {
+      font-size: clamp(2rem, 3.5vw, 2.75rem);
+      margin-bottom: 1rem;
+      letter-spacing: -0.01em;
+    }
+    .section-desc {
+      font-size: 1.0625rem;
+      color: var(--color-text-secondary);
+      line-height: 1.6;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      align-items: center;
+      margin-bottom: 4rem;
+    }
+    @media (min-width: 992px) {
+      .about-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+      }
+    }
+
+    .about-story p {
+      font-size: 1.0625rem;
+      color: var(--color-text-secondary);
+      line-height: 1.75;
+      margin-bottom: 1.25rem;
+    }
+    .about-signature {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--color-border);
+    }
+    .baker-avatar {
+      width: 52px;
+      height: 52px;
+      border-radius: var(--radius-full);
+      object-fit: cover;
+      border: 2px solid var(--color-accent-gold);
+    }
+    .baker-name {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--color-text-primary);
+    }
+    .baker-role {
+      font-size: 0.8125rem;
+      color: var(--color-text-muted);
+    }
+
+    /* Core Values 4-Card Grid */
+    .values-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    @media (min-width: 640px) {
+      .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (min-width: 1024px) {
+      .values-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .value-card {
+      background-color: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: 1.75rem 1.5rem;
+      transition: var(--transition-smooth);
+    }
+    .value-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--color-accent-gold);
+    }
+    .value-icon-box {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-sm);
+      background-color: var(--color-brand-surface);
+      color: var(--color-brand-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+    }
+    [data-theme="dark"] .value-icon-box {
+      color: var(--color-accent-gold);
+    }
+    .value-title {
+      font-size: 1.125rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .value-desc {
+      font-size: 0.875rem;
+      color: var(--color-text-secondary);
+      line-height: 1.6;
+    }
+
+    /* ==========================================================================
+       SERVICES / PRODUCTS MENU SECTION
+       ========================================================================== */
+    .menu-section {
+      padding: 5.5rem 0;
+    }
+
+    .filter-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 3rem;
+      padding: 0.375rem;
+      background-color: var(--color-surface-subtle);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-full);
+      max-width: max-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .filter-btn {
+      padding: 0.5rem 1.125rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      border-radius: var(--radius-full);
+      color: var(--color-text-secondary);
+      white-space: nowrap;
+      transition: var(--transition-smooth);
+    }
+    .filter-btn:hover {
+      color: var(--color-text-primary);
+    }
+    .filter-btn.active {
+      background-color: var(--color-brand-primary);
+      color: #ffffff;
+      box-shadow: var(--shadow-sm);
+    }
+    [data-theme="dark"] .filter-btn.active {
+      background-color: var(--color-accent-gold);
+      color: #0e1913;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    @media (min-width: 640px) {
+      .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (min-width: 1024px) {
+      .products-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .product-card {
+      background-color: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition-smooth);
+      position: relative;
+    }
+    .product-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: rgba(198, 146, 57, 0.4);
+    }
+
+    .product-img-wrapper {
+      position: relative;
+      aspect-ratio: 4 / 3;
+      background-color: var(--color-surface-subtle);
+      overflow: hidden;
+    }
+    .product-img-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .product-card:hover .product-img-wrapper img {
+      transform: scale(1.05);
+    }
+
+    .product-dietary-tag {
+      position: absolute;
+      top: 0.75rem;
+      right: 0.75rem;
+      background-color: var(--color-surface-glass);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--color-border);
+      font-size: 0.6875rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 0.25rem 0.5rem;
+      border-radius: var(--radius-sm);
+      color: var(--color-text-primary);
+    }
+
+    .product-body {
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .product-category-row {
+      display: flex;
+      align-items: center;
+      gap: 0.375rem;
+      font-size: 0.75rem;
+      color: var(--color-text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.375rem;
+    }
+
+    .product-title {
+      font-size: 1.125rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      line-height: 1.3;
+    }
+
+    .product-desc {
+      font-size: 0.84375rem;
+      color: var(--color-text-secondary);
+      line-height: 1.5;
+      margin-bottom: 1.25rem;
+      flex-grow: 1;
+    }
+
+    .product-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      padding-top: 0.875rem;
+      border-top: 1px solid var(--color-border-subtle);
+    }
+
+    .product-price {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--color-brand-primary);
+    }
+    [data-theme="dark"] .product-price {
+      color: var(--color-accent-gold);
+    }
+
+    .product-add-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.375rem;
+      background-color: var(--color-surface-subtle);
+      border: 1px solid var(--color-border);
+      color: var(--color-text-primary);
+      font-size: 0.8125rem;
+      font-weight: 600;
+      padding: 0.4375rem 0.875rem;
+      border-radius: var(--radius-sm);
+      transition: var(--transition-smooth);
+    }
+    .product-add-btn:hover {
+      background-color: var(--color-brand-primary);
+      color: #ffffff;
+      border-color: var(--color-brand-primary);
+    }
+    [data-theme="dark"] .product-add-btn:hover {
+      background-color: var(--color-accent-gold);
+      color: #0e1913;
+      border-color: var(--color-accent-gold);
+    }
+
+    /* ==========================================================================
+       ORDER BAG DRAWER (SLIDE-OVER CART & WHATSAPP GENERATOR)
+       ========================================================================== */
+    .cart-drawer-backdrop {
+      position: fixed;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.55);
+      backdrop-filter: blur(4px);
+      z-index: 100;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+    .cart-drawer-backdrop.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .cart-drawer {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      max-width: 440px;
+      background-color: var(--color-surface);
+      z-index: 101;
+      box-shadow: var(--shadow-lg);
+      transform: translateX(100%);
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      flex-direction: column;
+    }
+    .cart-drawer.active {
+      transform: translateX(0);
+    }
+
+    .cart-drawer-header {
+      padding: 1.25rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .cart-drawer-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .cart-close-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-text-muted);
+      border: 1px solid var(--color-border);
+    }
+    .cart-close-btn:hover {
+      color: var(--color-text-primary);
+      background-color: var(--color-surface-subtle);
+    }
+
+    .cart-drawer-body {
+      flex-grow: 1;
+      overflow-y: auto;
+      padding: 1.5rem;
+    }
+
+    .cart-empty-state {
+      text-align: center;
+      padding: 3rem 1rem;
+      color: var(--color-text-muted);
+    }
+    .cart-empty-icon {
+      width: 56px;
+      height: 56px;
+      margin: 0 auto 1rem auto;
+      opacity: 0.4;
+    }
+
+    .cart-items-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      list-style: none;
+    }
+
+    .cart-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--color-border-subtle);
+    }
+    .cart-item-img {
+      width: 58px;
+      height: 58px;
+      border-radius: var(--radius-sm);
+      object-fit: cover;
+      flex-shrink: 0;
+      border: 1px solid var(--color-border);
+    }
+    .cart-item-info {
+      flex-grow: 1;
+    }
+    .cart-item-name {
+      font-size: 0.9375rem;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+      line-height: 1.3;
+    }
+    .cart-item-price {
+      font-size: 0.875rem;
+      color: var(--color-brand-primary);
+      font-weight: 700;
+    }
+    [data-theme="dark"] .cart-item-price {
+      color: var(--color-accent-gold);
+    }
+
+    .cart-qty-controls {
+      display: flex;
+      align-items: center;
+      gap: 0.375rem;
+      background-color: var(--color-surface-subtle);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      padding: 0.125rem;
+    }
+    .cart-qty-btn {
+      width: 26px;
+      height: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: var(--color-text-primary);
+      border-radius: 4px;
+    }
+    .cart-qty-btn:hover {
+      background-color: var(--color-border);
+    }
+    .cart-qty-num {
+      min-width: 20px;
+      text-align: center;
+      font-size: 0.8125rem;
+      font-weight: 700;
+    }
+
+    .cart-drawer-footer {
+      padding: 1.5rem;
+      border-top: 1px solid var(--color-border);
+      background-color: var(--color-surface-subtle);
+    }
+    .cart-summary-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9375rem;
+      color: var(--color-text-secondary);
+      margin-bottom: 0.5rem;
+    }
+    .cart-summary-total {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: var(--color-text-primary);
+      padding-top: 0.75rem;
+      border-top: 1px dashed var(--color-border);
+      margin-bottom: 1.25rem;
+    }
+
+    .whatsapp-order-btn {
+      width: 100%;
+      background-color: #25d366;
+      color: #ffffff;
+      font-size: 0.9375rem;
+      font-weight: 700;
+      padding: 0.875rem;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.625rem;
+      transition: var(--transition-smooth);
+    }
+    .whatsapp-order-btn:hover {
+      background-color: #20ba5a;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
+    }
+
+    /* ==========================================================================
+       TESTIMONIALS SECTION
+       ========================================================================== */
+    .testimonials-section {
+      padding: 5.5rem 0;
+      background-color: var(--color-surface-subtle);
+      border-top: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .testimonials-container {
+      position: relative;
+      max-width: 940px;
+      margin: 0 auto;
+    }
+
+    .testimonial-cards-wrapper {
+      position: relative;
+      overflow: hidden;
+      min-height: 280px;
+    }
+
+    .testimonial-slide {
+      background-color: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem 2rem;
+      box-shadow: var(--shadow-sm);
+      display: none;
+      opacity: 0;
+      transform: scale(0.98);
+      transition: opacity 0.35s ease, transform 0.35s ease;
+    }
+    .testimonial-slide.active {
+      display: block;
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .testimonial-stars {
+      color: #e2b25c;
+      font-size: 1.125rem;
+      letter-spacing: 0.15em;
+      margin-bottom: 1rem;
+    }
+
+    .testimonial-quote {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-style: italic;
+      line-height: 1.6;
+      color: var(--color-text-primary);
+      margin-bottom: 1.75rem;
+    }
+
+    .testimonial-author-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .author-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-full);
+      object-fit: cover;
+      border: 2px solid var(--color-accent-gold);
+    }
+    .author-info-col {
+      display: flex;
+      flex-direction: column;
+    }
+    .author-name {
+      font-weight: 700;
+      color: var(--color-text-primary);
+      font-size: 1rem;
+    }
+    .author-role {
+      font-size: 0.8125rem;
+      color: var(--color-text-muted);
+    }
+
+    .carousel-controls {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .carousel-arrow-btn {
+      width: 42px;
+      height: 42px;
+      border-radius: var(--radius-full);
+      background-color: var(--color-surface);
+      border: 1px solid var(--color-border);
+      color: var(--color-text-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition-smooth);
+    }
+    .carousel-arrow-btn:hover {
+      background-color: var(--color-brand-primary);
+      color: #ffffff;
+      border-color: var(--color-brand-primary);
+    }
+    [data-theme="dark"] .carousel-arrow-btn:hover {
+      background-color: var(--color-accent-gold);
+      color: #0e1913;
+    }
+
+    .carousel-dots {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .carousel-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: var(--radius-full);
+      background-color: var(--color-border);
+      transition: var(--transition-smooth);
+    }
+    .carousel-dot.active {
+      width: 24px;
+      background-color: var(--color-accent-gold);
+    }
+
+    /* ==========================================================================
+       CONTACT & LOCATION SECTION
+       ========================================================================== */
+    .contact-section {
+      padding: 5.5rem 0;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3.5rem;
+    }
+    @media (min-width: 992px) {
+      .contact-grid {
+        grid-template-columns: 1.1fr 1fr;
+        gap: 4rem;
+      }
+    }
+
+    .contact-info-card {
+      background-color: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: 2rem;
+      box-shadow: var(--shadow-sm);
+    }
+    .info-item-block {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.75rem;
+    }
+    .info-item-block:last-child {
+      margin-bottom: 0;
+    }
+    .info-icon-box {
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-sm);
+      background-color: var(--color-brand-surface);
+      color: var(--color-brand-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    [data-theme="dark"] .info-icon-box {
+      color: var(--color-accent-gold);
+    }
+    .info-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--color-text-muted);
+      margin-bottom: 0.25rem;
+      font-weight: 600;
+    }
+    .info-value {
+      font-size: 0.9375rem;
+      color: var(--color-text-primary);
+      line-height: 1.5;
+    }
+
+    .location-preview-card {
+      margin-top: 1.5rem;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--color-border);
+      background-color: var(--color-surface-subtle);
+      position: relative;
+    }
+    .map-graphic {
+      height: 180px;
+      background: linear-gradient(135deg, rgba(27,67,50,0.06) 0%, rgba(198,146,57,0.12) 100%), url('data:image/svg+xml;utf8,<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h40v40H0z" fill="none"/><path d="M0 20h40M20 0v40" stroke="rgba(0,0,0,0.04)" stroke-width="1"/></svg>');
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      position: relative;
+    }
+    .map-pin {
+      width: 44px;
+      height: 44px;
+      background-color: var(--color-brand-primary);
+      color: #ffffff;
+      border-radius: var(--radius-full);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      animation: pulse-pin 2s infinite ease-in-out;
+    }
+    @keyframes pulse-pin {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+    .map-footer-bar {
+      padding: 0.875rem 1.25rem;
+      background-color: var(--color-surface);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid var(--color-border-subtle);
+    }
+
+    .contact-form-wrapper {
+      background-color: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: 2.25rem;
+      box-shadow: var(--shadow-sm);
+    }
+    .form-group {
+      margin-bottom: 1.25rem;
+    }
+    .form-label {
+      display: block;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--color-text-primary);
+      margin-bottom: 0.375rem;
+    }
+    .form-input, .form-textarea, .form-select {
+      width: 100%;
+      background-color: var(--color-surface-subtle);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      padding: 0.6875rem 0.875rem;
+      font-size: 0.9375rem;
+      color: var(--color-text-primary);
+      transition: var(--transition-smooth);
+    }
+    .form-input:focus, .form-textarea:focus, .form-select:focus {
+      border-color: var(--color-accent-gold);
+      background-color: var(--color-surface);
+      box-shadow: 0 0 0 3px rgba(198, 146, 57, 0.15);
+    }
+    .form-textarea {
+      resize: vertical;
+      min-height: 110px;
+    }
+    .form-submit-btn {
+      width: 100%;
+      padding: 0.8125rem;
+      font-size: 0.9375rem;
+      font-weight: 700;
+    }
+
+    .toast-notification {
+      position: fixed;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background-color: var(--color-brand-primary);
+      color: #ffffff;
+      padding: 1rem 1.75rem;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-lg);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      z-index: 200;
+      opacity: 0;
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+      font-weight: 600;
+      font-size: 0.9375rem;
+    }
+    .toast-notification.active {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    /* ==========================================================================
+       FLOATING WHATSAPP BUTTON & CHAT POPOVER
+       ========================================================================== */
+    .floating-whatsapp-container {
+      position: fixed;
+      bottom: 1.75rem;
+      right: 1.75rem;
+      z-index: 95;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    .whatsapp-popover {
+      width: 320px;
+      background-color: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-lg);
+      margin-bottom: 0.875rem;
+      overflow: hidden;
+      display: none;
+      animation: popover-fade 0.25s ease forwards;
+    }
+    .whatsapp-popover.open {
+      display: block;
+    }
+    @keyframes popover-fade {
+      from { opacity: 0; transform: translateY(10px) scale(0.97); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    .whatsapp-popover-header {
+      background-color: #075e54;
+      color: #ffffff;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .popover-baker-thumb {
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-full);
+      object-fit: cover;
+      border: 2px solid #ffffff;
+    }
+    .popover-header-text h5 {
+      font-size: 0.9375rem;
+      color: #ffffff;
+      font-weight: 700;
+      font-family: var(--font-body);
+    }
+    .popover-header-text p {
+      font-size: 0.75rem;
+      opacity: 0.85;
+    }
+
+    .whatsapp-popover-body {
+      padding: 1rem;
+      background-color: var(--color-surface-subtle);
+    }
+    .chat-bubble {
+      background-color: var(--color-surface);
+      padding: 0.75rem 0.875rem;
+      border-radius: 8px 8px 8px 0;
+      font-size: 0.875rem;
+      color: var(--color-text-primary);
+      margin-bottom: 0.75rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+    }
+    .quick-prompts {
+      display: flex;
+      flex-direction: column;
+      gap: 0.375rem;
+    }
+    .quick-prompt-btn {
+      background-color: var(--color-surface);
+      border: 1px solid var(--color-border);
+      padding: 0.5rem 0.75rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.8125rem;
+      color: var(--color-brand-primary);
+      font-weight: 600;
+      text-align: left;
+      transition: var(--transition-smooth);
+    }
+    .quick-prompt-btn:hover {
+      background-color: var(--color-border);
+    }
+
+    .floating-whatsapp-btn {
+      width: 58px;
+      height: 58px;
+      border-radius: var(--radius-full);
+      background-color: #25d366;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 18px rgba(37, 211, 102, 0.45);
+      position: relative;
+      transition: var(--transition-smooth);
+    }
+    .floating-whatsapp-btn:hover {
+      transform: scale(1.08);
+      background-color: #20ba5a;
+    }
+    .floating-whatsapp-btn svg {
+      width: 32px;
+      height: 32px;
+    }
+    .pulse-ring {
+      position: absolute;
+      inset: -4px;
+      border-radius: var(--radius-full);
+      border: 2px solid #25d366;
+      opacity: 0.7;
+      animation: ring-pulse 2s infinite ease-out;
+    }
+    @keyframes ring-pulse {
+      0% { transform: scale(1); opacity: 0.8; }
+      100% { transform: scale(1.35); opacity: 0; }
+    }
+
+    /* ==========================================================================
+       FOOTER
+       ========================================================================== */
+    .site-footer {
+      background-color: #0e1813;
+      color: #d1dbd4;
+      padding-top: 4.5rem;
+      padding-bottom: 2.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      margin-bottom: 3.5rem;
+    }
+    @media (min-width: 640px) {
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (min-width: 1024px) {
+      .footer-grid {
+        grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
+      }
+    }
+
+    .footer-brand-title {
+      font-size: 1.5rem;
+      font-family: var(--font-display);
+      color: #f5f7f4;
+      margin-bottom: 0.75rem;
+    }
+    .footer-brand-desc {
+      font-size: 0.875rem;
+      color: #9cb1a4;
+      line-height: 1.6;
+      margin-bottom: 1.25rem;
+    }
+
+    .footer-heading {
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--color-accent-gold);
+      margin-bottom: 1.25rem;
+      font-weight: 700;
+    }
+    .footer-links-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.625rem;
+    }
+    .footer-link {
+      font-size: 0.875rem;
+      color: #a4b7ab;
+      transition: color 0.2s;
+    }
+    .footer-link:hover {
+      color: #ffffff;
+    }
+
+    .newsletter-form {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: 0.75rem;
+    }
+    .newsletter-input {
+      background-color: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: var(--radius-sm);
+      padding: 0.5rem 0.75rem;
+      font-size: 0.875rem;
+      color: #ffffff;
+      flex-grow: 1;
+    }
+    .newsletter-btn {
+      background-color: var(--color-accent-gold);
+      color: #0e1913;
+      font-weight: 700;
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.875rem;
+    }
+
+    .footer-bottom-row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 0.8125rem;
+      color: #7b9183;
+    }
+    @media (min-width: 768px) {
+      .footer-bottom-row {
+        flex-direction: row;
+      }
+    }
+
+    .back-to-top-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.375rem;
+      color: #a4b7ab;
+      font-size: 0.8125rem;
+      padding: 0.375rem 0.75rem;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: var(--radius-full);
+      transition: var(--transition-smooth);
+    }
+    .back-to-top-btn:hover {
+      color: #ffffff;
+      border-color: var(--color-accent-gold);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ANNOUNCEMENT BANNER -->
+  <aside class="announcement-bar" aria-label="Announcement">
+    <span>✨ Morning Deck Oven Batch: Country Boules Fresh at <span class="accent">6:30 AM</span></span>
+    <span class="dot">·</span>
+    <span>Same-Day WhatsApp Delivery across Bengaluru</span>
+    <span class="dot">·</span>
+    <span class="accent">Indiranagar 12th Main</span>
+  </aside>
+
+  <!-- STICKY HEADER & TOP BAR -->
+  <header class="site-header" id="topHeader">
+    <div class="container nav-container">
+      
+      <!-- Zone 1: Brand Wordmark -->
+      <a href="#home" class="brand-wordmark" aria-label="Artisan Crumb Bakery Home">
+        <svg class="brand-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-1.85.63-3.55 1.69-4.9L16.9 18.31C15.55 19.37 13.85 20 12 20zm6.31-3.1L7.1 5.69C8.45 4.63 10.15 4 12 4c4.41 0 8 3.59 8 8 0 1.85-.63 3.55-1.69 4.9z"/>
+        </svg>
+        <span>Artisan Crumb</span>
+      </a>
+
+      <!-- Zone 2: Navigation Links -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active" data-nav="home">Home</a></li>
+          <li><a href="#about" class="nav-link" data-nav="about">Our Story</a></li>
+          <li><a href="#menu" class="nav-link" data-nav="menu">Bakes Menu</a></li>
+          <li><a href="#testimonials" class="nav-link" data-nav="testimonials">Reviews</a></li>
+          <li><a href="#contact" class="nav-link" data-nav="contact">Visit & Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Zone 3: Actions (Theme Toggle, Order Bag Trigger, Mobile Hamburger) -->
+      <div class="header-actions">
+        <!-- Theme Toggle -->
+        <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle light or dark theme" title="Toggle theme">
+          <svg id="themeIconSun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg id="themeIconMoon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Order Bag Trigger -->
+        <button id="openCartBtn" class="cart-trigger-btn" aria-label="Open your order bag">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span>Order Bag</span>
+          <span id="headerCartCount" class="cart-count">0</span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileMenuToggle" class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div id="mobileNavDrawer" class="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <a href="#home" class="mobile-nav-link" onclick="closeMobileNav()">Home</a>
+    <a href="#about" class="mobile-nav-link" onclick="closeMobileNav()">Our Story & Craft</a>
+    <a href="#menu" class="mobile-nav-link" onclick="closeMobileNav()">Fresh Bakes Menu</a>
+    <a href="#testimonials" class="mobile-nav-link" onclick="closeMobileNav()">Customer Reviews</a>
+    <a href="#contact" class="mobile-nav-link" onclick="closeMobileNav()">Visit & Contact</a>
+    <a href="https://wa.me/919876543210?text=Hello%20Artisan%20Crumb!%20I%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener noreferrer" class="cta-btn-primary" style="text-align: center; margin-top: 0.5rem;">
+      Chat on WhatsApp
+    </a>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Hero Copy -->
+          <div class="hero-content">
+            <div class="hero-eyebrow">
+              <span class="hero-eyebrow-line"></span>
+              <span>Bengaluru's Boutique Bakehouse</span>
+            </div>
+            
+            <h1 class="hero-headline">Handcrafted Sourdough & French Viennoiserie</h1>
+            
+            <p class="hero-subheadline">
+              Slow 36-hour wild fermentation, 100% Normandy cultured butter, and stone-milled heritage grains. Baked daily in our stone-hearth deck ovens on 12th Main, Indiranagar.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#menu" class="cta-btn-primary">
+                <span>Explore Today's Bakes</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+
+              <a href="https://wa.me/919876543210?text=Hello%20Artisan%20Crumb!%20What%20fresh%20loaves%20are%20available%20now?" target="_blank" rel="noopener noreferrer" class="cta-btn-secondary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="#25D366" stroke="none">
+                  <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/>
+                </svg>
+                <span>Direct WhatsApp Order</span>
+              </a>
+            </div>
+
+            <!-- Proof Metrics -->
+            <div class="trust-strip">
+              <div class="trust-item">
+                <span class="trust-number">36h</span>
+                <span class="trust-label">Cold Ferment</span>
+              </div>
+              <div class="trust-item">
+                <span class="trust-number">81</span>
+                <span class="trust-label">Butter Layers</span>
+              </div>
+              <div class="trust-item">
+                <span class="trust-number">0%</span>
+                <span class="trust-label">Chemical Additives</span>
+              </div>
+              <div class="trust-item">
+                <span class="trust-number">4.9★</span>
+                <span class="trust-label">1,400+ Reviews</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Media -->
+          <div class="hero-media-wrapper">
+            <div class="hero-image-frame">
+              <img 
+                src="/src/assets/images/hero_bakery_artisan_1793337115115.jpg" 
+                alt="Artisan Crumb bakery display counter in Bengaluru with sourdough loaves and pastries" 
+                loading="eager"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+
+            <!-- Floating Fresh Batch Badge -->
+            <div class="hero-badge-floating">
+              <div class="status-indicator-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 14 14"></polyline>
+                </svg>
+              </div>
+              <div>
+                <div class="status-badge-title">Batch #2 Now Resting</div>
+                <div class="status-badge-desc">Rustic Country Boules & Almond Croissants</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-kicker">Our Heritage & Craft</div>
+          <h2 class="section-title">The Art of Patient Fermentation</h2>
+          <p class="section-desc">
+            We started with a century-old wild sourdough culture and an uncompromising belief: real bread requires only four honest ingredients, time, and human hands.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Story Narrative -->
+          <div class="about-story">
+            <p>
+              Founded on 12th Main Indiranagar by baker Vikram and pastry chef Ananya, <strong>Artisan Crumb</strong> was conceived as an homage to the slow bakeries of rural France, re-imagined through the lens of Southern India's agricultural riches.
+            </p>
+            <p>
+              Every single loaf begins its journey 36 hours prior with our heritage levain starter, nicknamed <em>"Bessie"</em>. We source organic heirloom wheat and ancient Karnataka red millets, milling them gently so the vital wheat germ oils and complex aromas stay intact.
+            </p>
+            <p>
+              You won't find dough conditioners, commercial yeast accelerants, or artificial preservatives in our kitchen. Just French deck stone heat, wild native yeasts, and the golden crackle of a blistered, caramelized crust.
+            </p>
+
+            <div class="about-signature">
+              <img src="/src/assets/images/hero_bakery_artisan_1793337115115.jpg" alt="Chef Vikram and Chef Ananya" class="baker-avatar" />
+              <div>
+                <div class="baker-name">Chef Vikram & Ananya</div>
+                <div class="baker-role">Head Baker & Master Pâtissière</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Craft Visual -->
+          <div class="hero-image-frame" style="aspect-ratio: 4/3;">
+            <img 
+              src="/src/assets/images/product_sourdough_loaf_1793337115686.jpg" 
+              alt="Handcrafted country sourdough loaf with crisp blistered ear and flour wheat score" 
+              loading="lazy"
+              referrerpolicy="no-referrer"
+            />
+          </div>
+        </div>
+
+        <!-- 4 Values Cards -->
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+            <h3 class="value-title">36-Hour Wild Starter</h3>
+            <p class="value-desc">Extended cold-proofing breaks down phytates and complex starches, creating an open crumb that is exceptionally gut-friendly.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                <line x1="15" y1="9" x2="15.01" y2="9"></line>
+              </svg>
+            </div>
+            <h3 class="value-title">Normandy Cultured Butter</h3>
+            <p class="value-desc">Imported 84% butterfat European cultured butter hand-laminated to create 81 gossamer-thin, shattered flake layers.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <h3 class="value-title">Local Karnataka Terroir</h3>
+            <p class="value-desc">Coorg single-estate vanilla beans, Chikmagalur dark roasts, and Wayanad forest honey infused into our curds and glazes.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3 class="value-title">Zero Preservatives</h3>
+            <p class="value-desc">No potassium bromate, artificial dough softeners, or bleach. Pure stone-ground flour, Himalayan pink salt, and spring water.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PRODUCTS & MENU SECTION -->
+    <section id="menu" class="menu-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-kicker">Daily Deck Oven Selection</div>
+          <h2 class="section-title">The Bakehouse Counter</h2>
+          <p class="section-desc">
+            Handmade in limited daily batches. Add items to your order bag to generate a direct WhatsApp order or order for café pickup.
+          </p>
+        </div>
+
+        <!-- Interactive Category Filter Bar -->
+        <div class="filter-bar" role="tablist" aria-label="Menu filter categories">
+          <button class="filter-btn active" data-category="all" role="tab" aria-selected="true">All Bakes</button>
+          <button class="filter-btn" data-category="sourdough" role="tab" aria-selected="false">Sourdough Breads</button>
+          <button class="filter-btn" data-category="viennoiserie" role="tab" aria-selected="false">Viennoiserie</button>
+          <button class="filter-btn" data-category="patisserie" role="tab" aria-selected="false">Pâtisserie & Tarts</button>
+          <button class="filter-btn" data-category="cakes" role="tab" aria-selected="false">Celebration Cakes</button>
+          <button class="filter-btn" data-category="coffee" role="tab" aria-selected="false">Coffee & Hampers</button>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid" id="productsGrid">
+          
+          <!-- Product 1 -->
+          <article class="product-card" data-category="sourdough">
+            <div class="product-img-wrapper">
+              <img 
+                src="/src/assets/images/product_sourdough_loaf_1793337115686.jpg" 
+                alt="Artisanal Country Sourdough Boule" 
+                loading="lazy"
+                referrerpolicy="no-referrer"
+              />
+              <span class="product-dietary-tag">100% Vegan · Sourdough</span>
+            </div>
+            <div class="product-body">
+              <div class="product-category-row">
+                <span>Wild Ferment</span>
+                <span>·</span>
+                <span>800g Loaf</span>
+              </div>
+              <h3 class="product-title">Country Sourdough Boule</h3>
+              <p class="product-desc">Our signature 36-hour wild levain boule. Deep caramelized blistered ear, custard-like crumb with mild hazelnut notes.</p>
+              <div class="product-footer">
+                <span class="product-price tabular-nums">₹320</span>
+                <button class="product-add-btn" onclick="addToCart('p1', 'Country Sourdough Boule', 320, '/src/assets/images/product_sourdough_loaf_1793337115686.jpg')">
+                  <span>+ Add to Bag</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 2 -->
+          <article class="product-card" data-category="viennoiserie">
+            <div class="product-img-wrapper">
+              <img 
+                src="/src/assets/images/product_almond_croissant_1793337116109.jpg" 
+                alt="Twice-Baked Parisian Almond Croissant" 
+                loading="lazy"
+                referrerpolicy="no-referrer"
+              />
+              <span class="product-dietary-tag">Customer Favorite</span>
+            </div>
+            <div class="product-body">
+              <div class="product-category-row">
+                <span>Viennoiserie</span>
+                <span>·</span>
+                <span>81 Butter Layers</span>
+              </div>
+              <h3 class="product-title">Twice-Baked Almond Croissant</h3>
+              <p class="product-desc">Soaked in vanilla syrup, stuffed with rich almond frangipane cream, topped with toasted flaked almonds and powdered snow.</p>
+              <div class="product-footer">
+                <span class="product-price tabular-nums">₹260</span>
+                <button class="product-add-btn" onclick="addToCart('p2', 'Twice-Baked Almond Croissant', 260, '/src/assets/images/product_almond_croissant_1793337116109.jpg')">
+                  <span>+ Add to Bag</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 3 -->
+          <article class="product-card" data-category="patisserie">
+            <div class="product-img-wrapper">
+              <img 
+                src="/src/assets/images/product_berry_tart_1793337117271.jpg" 
+                alt="Madagascar Vanilla & Wild Berry Tart" 
+                loading="lazy"
+                referrerpolicy="no-referrer"
+              />
+              <span class="product-dietary-tag">Fresh Daily</span>
+            </div>
+            <div class="product-body">
+              <div class="product-category-row">
+                <span>Pâtisserie</span>
+                <span>·</span>
+                <span>Single Portion</span>
+              </div>
+              <h3 class="product-title">Wild Berry & Vanilla Tart</h3>
+              <p class="product-desc">Crisp buttery sablé shell lined with almond sponge, silky Tahitian vanilla bean pastry cream, and fresh organic berries.</p>
+              <div class="product-footer">
+                <span class="product-price tabular-nums">₹340</span>
+                <button class="product-add-btn" onclick="addToCart('p3', 'Wild Berry & Vanilla Tart', 340, '/src/assets/images/product_berry_tart_1793337117271.jpg')">
+                  <span>+ Add to Bag</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 4 -->
+          <article class="product-card" data-category="cakes">
+            <div class="product-img-wrapper">
+              <img 
+                src="/src/assets/images/product_pistachio_cake_1793337116992.jpg" 
+                alt="Pistachio Raspberry Celebration Cake" 
+                loading="lazy"
+                referrerpolicy="no-referrer"
+              />
+              <span class="product-dietary-tag">Bespoke Celebration</span>
+            </div>
+            <div class="product-body">
+              <div class="product-category-row">
+                <span>Custom Cakes</span>
+                <span>·</span>
+                <span>1kg Size</span>
+              </div>
+              <h3 class="product-title">Pistachio & Raspberry Cake</h3>
+              <p class="product-desc">Moist Sicilian pistachio crumb layered with tart raspberry compote, silky white chocolate ganache, and edible 24k gold leaf.</p>
+              <div class="product-footer">
+                <span class="product-price tabular-nums">₹1,850</span>
+                <button class="product-add-btn" onclick="addToCart('p4', 'Pistachio & Raspberry Cake', 1850, '/src/assets/images/product_pistachio_cake_1793337116992.jpg')">
+                  <span>+ Add to Bag</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 5 -->
+          <article class="product-card" data-category="viennoiserie">
+            <div class="product-img-wrapper">
+              <img 
+                src="https://images.unsplash.com/photo-1549903072-7e6e0bedb7fb?auto=format&fit=crop&w=700&q=80" 
+                alt="Valrhona Dark Chocolate Pain au Chocolat" 
+                loading="lazy"
+                referrerpolicy="no-referrer"
+                onerror="this.src='/src/assets/images/product_almond_croissant_1793337116109.jpg'"
+              />
+              <span class="product-dietary-tag">French Butter</span>
+            </div>
+            <div class="product-body">
+              <div class="product-category-row">
+                <span>Viennoiserie</span>
+                <span>·</span>
+                <span>Classic</span>
+              </div>
+              <h3 class="product-title">Valrhona Pain au Chocolat</h3>
+              <p class="product-desc">Golden laminated pillow encasing twin batons of bittersweet 70% French dark chocolate. Melts luxuriously when warmed.</p>
+              <div class="product-footer">
+                <span class="product-price tabular-nums">₹240</span>
+                <button class="product-add-btn" onclick="addToCart('p5', 'Valrhona Pain au Chocolat', 240, 'https://images.unsplash.com/photo-1549903072-7e6e0bedb7fb?auto=format&fit=crop&w=700&q=80')">
+                  <span>+ Add to Bag</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 6 -->
+          <article class="product-card" data-category="sourdough">
+            <div class="product-img-wrapper">
+              <img 
+                src="https://images.unsplash.com/photo-1589367920969-ab8e050bbb04?auto=format&fit=crop&w=700&q=80" 
+                alt="Seeded Multigrain Sourdough Batard" 
+                loading="lazy"
+                referrerpolicy="no-referrer"
+                onerror="this.src='/src/assets/images/product_sourdough_loaf_1793337115686.jpg'"
+              />
+              <span class="product-dietary-tag">High Fiber · Vegan</span>
+            </div>
+            <div class="product-body">
+              <div class="product-category-row">
+                <span>Wild Ferment</span>
+                <span>·</span>
+                <span>750g Batard</span>
+              </div>
+              <h3 class="product-title">Roasted Seed Sourdough</h3>
+              <p class="product-desc">Encrusted with toasted white and black sesame, flaxseed, pumpkin kernels, and whole ragi berries for a deep savory crunch.</p>
+              <div class="product-footer">
+                <span class="product-price tabular-nums">₹350</span>
+                <button class="product-add-btn" onclick="addToCart('p6', 'Roasted Seed Sourdough', 350, 'https://images.unsplash.com/photo-1589367920969-ab8e050bbb04?auto=format&fit=crop&w=700&q=80')">
+                  <span>+ Add to Bag</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 7 -->
+          <article class="product-card" data-category="patisserie">
+            <div class="product-img-wrapper">
+              <img 
+                src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=700&q=80" 
+                alt="Caramelized Basque Burnt Cheesecake" 
+                loading="lazy"
+                referrerpolicy="no-referrer"
+                onerror="this.src='/src/assets/images/product_berry_tart_1793337117271.jpg'"
+              />
+              <span class="product-dietary-tag">Eggless Available</span>
+            </div>
+            <div class="product-body">
+              <div class="product-category-row">
+                <span>Pâtisserie</span>
+                <span>·</span>
+                <span>Per Slice</span>
+              </div>
+              <h3 class="product-title">Basque Burnt Cheesecake</h3>
+              <p class="product-desc">Deep mahogany caramelized exterior giving way to a velvety, molten cream center spiked with Coorg vanilla and sea salt.</p>
+              <div class="product-footer">
+                <span class="product-price tabular-nums">₹360</span>
+                <button class="product-add-btn" onclick="addToCart('p7', 'Basque Burnt Cheesecake', 360, 'https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=700&q=80')">
+                  <span>+ Add to Bag</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 8 -->
+          <article class="product-card" data-category="coffee">
+            <div class="product-img-wrapper">
+              <img 
+                src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=700&q=80" 
+                alt="Bengaluru Morning Coffee & Bakes Hamper" 
+                loading="lazy"
+                referrerpolicy="no-referrer"
+                onerror="this.src='/src/assets/images/hero_bakery_artisan_1793337115115.jpg'"
+              />
+              <span class="product-dietary-tag">Gifting Box</span>
+            </div>
+            <div class="product-body">
+              <div class="product-category-row">
+                <span>Specialty Gift</span>
+                <span>·</span>
+                <span>Curated Box</span>
+              </div>
+              <h3 class="product-title">Morning Roast & Pastry Box</h3>
+              <p class="product-desc">A bottle of 18-hour Chikmagalur cold brew, 2 flaky butter croissants, sourdough crostini crisps, and artisan strawberry jam.</p>
+              <div class="product-footer">
+                <span class="product-price tabular-nums">₹890</span>
+                <button class="product-add-btn" onclick="addToCart('p8', 'Morning Roast & Pastry Box', 890, 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=700&q=80')">
+                  <span>+ Add to Bag</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="testimonials-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-kicker">Local Community Love</div>
+          <h2 class="section-title">Words from Bengaluru's Food Lovers</h2>
+          <p class="section-desc">
+            From Indiranagar residents picking up their daily morning loaf to weekend brunch seekers and couples planning milestone celebrations.
+          </p>
+        </div>
+
+        <div class="testimonials-container">
+          <div class="testimonial-cards-wrapper">
+            
+            <!-- Slide 1 -->
+            <div class="testimonial-slide active" data-slide="0">
+              <div class="testimonial-stars" aria-label="5 stars rating">★★★★★</div>
+              <p class="testimonial-quote">
+                "The country sourdough has completely transformed our morning breakfasts. That blistered crackly crust with the airy, tangy crumb is indistinguishable from the top artisanal bakeries in Paris or San Francisco."
+              </p>
+              <div class="testimonial-author-row">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Priya Ramanathan" class="author-avatar" />
+                <div class="author-info-col">
+                  <span class="author-name">Priya Ramanathan</span>
+                  <span class="author-role">Culinary Writer · 12th Main Indiranagar</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="testimonial-slide" data-slide="1">
+              <div class="testimonial-stars" aria-label="5 stars rating">★★★★★</div>
+              <p class="testimonial-quote">
+                "Chef Ananya crafted our wedding celebration cake—three tiers of Sicilian pistachio with raspberry and gold leaf. Our 300 guests could not stop raving about it. It was delicate, moist, and breathtakingly elegant."
+              </p>
+              <div class="testimonial-author-row">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Arjun & Sneha" class="author-avatar" />
+                <div class="author-info-col">
+                  <span class="author-name">Arjun & Sneha Kapur</span>
+                  <span class="author-role">Wedding at Palace Grounds, Bengaluru</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="testimonial-slide" data-slide="2">
+              <div class="testimonial-stars" aria-label="5 stars rating">★★★★★</div>
+              <p class="testimonial-quote">
+                "Their twice-baked almond croissant paired with a pour-over is easily the finest pastry in South India. Being able to order in 2 clicks on WhatsApp and having it arrive warm within 35 minutes is pure joy."
+              </p>
+              <div class="testimonial-author-row">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="David Mitchell" class="author-avatar" />
+                <div class="author-info-col">
+                  <span class="author-name">David Mitchell</span>
+                  <span class="author-role">Tech Lead & Weekend Home Baker, Koramangala</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="testimonial-slide" data-slide="3">
+              <div class="testimonial-stars" aria-label="5 stars rating">★★★★★</div>
+              <p class="testimonial-quote">
+                "We commissioned 80 custom festive bake boxes for our design agency's year-end client gifting. The sourdough crisps, Basque cheesecakes, and custom packaging left an unbelievable impression."
+              </p>
+              <div class="testimonial-author-row">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80" alt="Meera Sen" class="author-avatar" />
+                <div class="author-info-col">
+                  <span class="author-name">Meera Sen</span>
+                  <span class="author-role">Creative Director, Studio Monolith</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Carousel Controls -->
+          <div class="carousel-controls">
+            <button class="carousel-arrow-btn" onclick="prevTestimonial()" aria-label="Previous testimonial">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <div class="carousel-dots" id="carouselDots">
+              <button class="carousel-dot active" onclick="goToTestimonial(0)" aria-label="Go to review 1"></button>
+              <button class="carousel-dot" onclick="goToTestimonial(1)" aria-label="Go to review 2"></button>
+              <button class="carousel-dot" onclick="goToTestimonial(2)" aria-label="Go to review 3"></button>
+              <button class="carousel-dot" onclick="goToTestimonial(3)" aria-label="Go to review 4"></button>
+            </div>
+            <button class="carousel-arrow-btn" onclick="nextTestimonial()" aria-label="Next testimonial">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT, LOCATION & HOURS SECTION -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-kicker">Drop By or Order Online</div>
+          <h2 class="section-title">Visit the Bakehouse</h2>
+          <p class="section-desc">
+            Have questions about custom wedding cakes, wholesale sourdough supply, or morning pastry reservations? Send us a note or walk in.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Column 1: Info, Hours, Location Card -->
+          <div>
+            <div class="contact-info-card">
+              
+              <div class="info-item-block">
+                <div class="info-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <div class="info-label">Bakehouse Location</div>
+                  <div class="info-value">
+                    #482, 12th Main Road, HAL 2nd Stage,<br />
+                    Indiranagar, Bengaluru, Karnataka 560038
+                  </div>
+                </div>
+              </div>
+
+              <div class="info-item-block">
+                <div class="info-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 14 14"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <div class="info-label">Oven & Café Hours</div>
+                  <div class="info-value">
+                    <strong>Tuesday – Sunday:</strong> 7:00 AM – 9:30 PM<br />
+                    <span style="font-size: 0.8125rem; color: var(--color-text-muted);">Batch 1 fresh from oven at 7:00 AM · Batch 2 at 3:30 PM</span><br />
+                    <strong>Monday:</strong> Closed for deck maintenance & levain resting
+                  </div>
+                </div>
+              </div>
+
+              <div class="info-item-block">
+                <div class="info-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="info-label">Direct Line & WhatsApp</div>
+                  <div class="info-value">
+                    <a href="tel:+919876543210" style="color: var(--color-brand-primary); font-weight: 600;">+91 98765 43210</a><br />
+                    <span style="font-size: 0.8125rem; color: var(--color-text-muted);">hello@artisancrumb.in</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Location Preview Map Card -->
+            <div class="location-preview-card">
+              <div class="map-graphic">
+                <div class="map-pin">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <span style="margin-top: 0.5rem; font-size: 0.8125rem; font-weight: 700; color: var(--color-brand-primary);">12th Main, Indiranagar</span>
+              </div>
+              <div class="map-footer-bar">
+                <span style="font-size: 0.8125rem; color: var(--color-text-secondary);">Opposite Defence Colony Park</span>
+                <a href="https://maps.google.com/?q=Indiranagar+12th+Main+Bengaluru" target="_blank" rel="noopener noreferrer" style="font-size: 0.8125rem; font-weight: 600; color: var(--color-brand-primary); display: flex; align-items: center; gap: 0.25rem;">
+                  <span>Directions</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Functional Front-End Contact Form -->
+          <div class="contact-form-wrapper">
+            <h3 style="font-size: 1.375rem; margin-bottom: 0.5rem;">Send an Inquiry</h3>
+            <p style="font-size: 0.875rem; color: var(--color-text-secondary); margin-bottom: 1.5rem;">
+              We reply within 2 hours during café business hours.
+            </p>
+
+            <form id="contactForm" onsubmit="handleContactSubmit(event)">
+              <div class="form-group">
+                <label for="contactName" class="form-label">Full Name *</label>
+                <input type="text" id="contactName" class="form-input" placeholder="e.g. Ananya Rao" required />
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail" class="form-label">Email Address *</label>
+                <input type="email" id="contactEmail" class="form-input" placeholder="e.g. ananya@example.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="contactPhone" class="form-label">WhatsApp / Phone Number</label>
+                <input type="tel" id="contactPhone" class="form-input" placeholder="e.g. +91 98765 43210" />
+              </div>
+
+              <div class="form-group">
+                <label for="contactType" class="form-label">Inquiry Type</label>
+                <select id="contactType" class="form-select">
+                  <option value="custom_cake">Bespoke Celebration / Wedding Cake</option>
+                  <option value="event_catering">Private Event & Office Catering</option>
+                  <option value="daily_delivery">Daily Sourdough Subscription</option>
+                  <option value="cafe_table">Café Table Reservation</option>
+                  <option value="general">General Feedback or Hello</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage" class="form-label">Your Message *</label>
+                <textarea id="contactMessage" class="form-textarea" placeholder="Tell us about your event date, dietary preferences, or order details..." required></textarea>
+              </div>
+
+              <button type="submit" id="submitFormBtn" class="cta-btn-primary form-submit-btn">
+                <span>Send Message</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ORDER BAG SLIDE-OVER DRAWER -->
+  <div id="cartBackdrop" class="cart-drawer-backdrop" onclick="closeCart()"></div>
+  <aside id="cartDrawer" class="cart-drawer" aria-label="Order Bag Drawer">
+    <div class="cart-drawer-header">
+      <div class="cart-drawer-title">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        <span>Your Order Bag</span>
+      </div>
+      <button class="cart-close-btn" onclick="closeCart()" aria-label="Close Order Bag">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="cart-drawer-body" id="cartDrawerBody">
+      <div class="cart-empty-state" id="cartEmptyState">
+        <svg class="cart-empty-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="12" cy="12" r="10"></circle>
+          <path d="M8 12h8"></path>
+        </svg>
+        <p style="font-weight: 600; color: var(--color-text-primary); margin-bottom: 0.25rem;">Your order bag is currently empty</p>
+        <p style="font-size: 0.8125rem;">Explore our fresh sourdough and viennoiserie from the menu to get started.</p>
+      </div>
+
+      <ul class="cart-items-list" id="cartItemsList" style="display: none;"></ul>
+    </div>
+
+    <div class="cart-drawer-footer" id="cartDrawerFooter" style="display: none;">
+      <div class="cart-summary-row">
+        <span>Delivery / Pickup</span>
+        <span style="font-weight: 600;">Indiranagar / Bengaluru</span>
+      </div>
+      <div class="cart-summary-total">
+        <span>Estimated Total</span>
+        <span id="cartTotalPrice" class="tabular-nums">₹0</span>
+      </div>
+      <button class="whatsapp-order-btn" onclick="sendWhatsAppOrder()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/>
+        </svg>
+        <span>Send Order via WhatsApp</span>
+      </button>
+      <p style="font-size: 0.75rem; text-align: center; color: var(--color-text-muted); margin-top: 0.625rem;">
+        Clicking will open WhatsApp with your itemized selection ready to confirm.
+      </p>
+    </div>
+  </aside>
+
+  <!-- FLOATING WHATSAPP BUTTON & CHAT POPOVER -->
+  <div class="floating-whatsapp-container">
+    <div class="whatsapp-popover" id="whatsappPopover">
+      <div class="whatsapp-popover-header">
+        <img src="/src/assets/images/hero_bakery_artisan_1793337115115.jpg" alt="Baker Vikram" class="popover-baker-thumb" />
+        <div class="popover-header-text">
+          <h5>Artisan Crumb Concierge</h5>
+          <p>Online · Typically replies in &lt;5 mins</p>
+        </div>
+      </div>
+      <div class="whatsapp-popover-body">
+        <div class="chat-bubble">
+          👋 Namaskara! Fresh sourdough boules and almond croissants just came out of the oven. How can we help you today?
+        </div>
+        <div class="quick-prompts">
+          <button class="quick-prompt-btn" onclick="launchWhatsApp('Hi! What sourdough loaves are fresh in the counter right now?')">
+            🍞 Check today's fresh bread batch
+          </button>
+          <button class="quick-prompt-btn" onclick="launchWhatsApp('Hello, I would like to inquire about a custom celebration cake.')">
+            🎂 Inquire about custom celebration cake
+          </button>
+          <button class="quick-prompt-btn" onclick="launchWhatsApp('Hi Artisan Crumb, I would like to order same-day home delivery in Bengaluru.')">
+            🛵 Same-day home delivery in Bengaluru
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <button id="whatsappFabBtn" class="floating-whatsapp-btn" onclick="toggleWhatsAppPopover()" aria-label="Chat with Artisan Crumb on WhatsApp" title="Chat on WhatsApp">
+      <span class="pulse-ring"></span>
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- INTERACTIVE TOAST NOTIFICATION -->
+  <div id="toastNotification" class="toast-notification" role="status" aria-live="polite">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="2.5">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span id="toastMessage">Thank you! Your inquiry has been sent to our bakehouse team.</span>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-grid">
+        <!-- Brand Summary -->
+        <div>
+          <div class="footer-brand-title">Artisan Crumb</div>
+          <p class="footer-brand-desc">
+            Boutique craft bakery in Indiranagar, Bengaluru. Wild 36-hour cold fermented sourdoughs, 81-layer French butter viennoiserie, and bespoke celebration cakes.
+          </p>
+          <p style="font-size: 0.8125rem; color: #a4b7ab;">
+            100% Wild Ferment · Stone Milled · Zero Preservatives
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <div class="footer-heading">Navigation</div>
+          <ul class="footer-links-list">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">Our Story & Baker's Craft</a></li>
+            <li><a href="#menu" class="footer-link">Daily Deck Oven Menu</a></li>
+            <li><a href="#testimonials" class="footer-link">Bengaluru Food Reviews</a></li>
+            <li><a href="#contact" class="footer-link">Location & Café Hours</a></li>
+          </ul>
+        </div>
+
+        <!-- Offerings -->
+        <div>
+          <div class="footer-heading">Specialties</div>
+          <ul class="footer-links-list">
+            <li><a href="#menu" class="footer-link">Country Sourdough Boules</a></li>
+            <li><a href="#menu" class="footer-link">Normandy Butter Croissants</a></li>
+            <li><a href="#menu" class="footer-link">Basque Burnt Cheesecakes</a></li>
+            <li><a href="#menu" class="footer-link">Pistachio Celebration Cakes</a></li>
+            <li><a href="#menu" class="footer-link">Corporate & Festive Hampers</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter & Weekend Drops -->
+        <div>
+          <div class="footer-heading">Weekend Special Drops</div>
+          <p style="font-size: 0.84375rem; color: #a4b7ab; line-height: 1.5; margin-bottom: 0.75rem;">
+            Subscribe to receive our limited weekend bake specials (shio pan, brioche feuilletée) before they sell out.
+          </p>
+          <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+            <input type="email" id="newsletterEmail" class="newsletter-input" placeholder="Your email address" required />
+            <button type="submit" class="newsletter-btn">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom-row">
+        <div>
+          © 2026 Artisan Crumb Bakery & Patisserie. All rights reserved. Handcrafted with passion in Bengaluru.
+        </div>
+        <div>
+          <button class="back-to-top-btn" onclick="scrollToTop()">
+            <span>Back to top</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       EMBEDDED CLIENT JAVASCRIPT
+       ========================================================================== */
+  -->
+  <script>
+    // 1. THEME MANAGEMENT (PERSISTENT VIA LOCALSTORAGE)
+    const THEME_KEY = 'artisancrumb_theme';
+    const htmlElem = document.documentElement;
+    const themeToggleBtn = document.getElementById('themeToggleBtn');
+    const iconSun = document.getElementById('themeIconSun');
+    const iconMoon = document.getElementById('themeIconMoon');
+
+    function initTheme() {
+      const savedTheme = localStorage.getItem(THEME_KEY);
+      if (savedTheme) {
+        setTheme(savedTheme);
+      } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        setTheme('dark');
+      } else {
+        setTheme('light');
+      }
+    }
+
+    function setTheme(theme) {
+      htmlElem.setAttribute('data-theme', theme);
+      localStorage.setItem(THEME_KEY, theme);
+      if (theme === 'dark') {
+        iconSun.style.display = 'block';
+        iconMoon.style.display = 'none';
+      } else {
+        iconSun.style.display = 'none';
+        iconMoon.style.display = 'block';
+      }
+    }
+
+    themeToggleBtn.addEventListener('click', () => {
+      const current = htmlElem.getAttribute('data-theme') || 'light';
+      setTheme(current === 'dark' ? 'light' : 'dark');
+    });
+
+    initTheme();
+
+    // 2. MOBILE MENU DRAWER
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const mobileNavDrawer = document.getElementById('mobileNavDrawer');
+
+    mobileMenuToggle.addEventListener('click', () => {
+      const isOpen = mobileNavDrawer.classList.toggle('open');
+      mobileMenuToggle.setAttribute('aria-expanded', isOpen);
+    });
+
+    function closeMobileNav() {
+      mobileNavDrawer.classList.remove('open');
+      mobileMenuToggle.setAttribute('aria-expanded', 'false');
+    }
+
+    // 3. SCROLL SPY & ACTIVE NAV STATE
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    window.addEventListener('scroll', () => {
+      let currentSectionId = '';
+      const scrollPos = window.pageYOffset + 120;
+
+      sections.forEach(sec => {
+        const top = sec.offsetTop;
+        const height = sec.offsetHeight;
+        if (scrollPos >= top && scrollPos < top + height) {
+          currentSectionId = sec.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('data-nav') === currentSectionId) {
+          link.classList.add('active');
+        }
+      });
+    }, { passive: true });
+
+    // 4. MENU CATEGORY FILTERING
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const productCards = document.querySelectorAll('.product-card');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => {
+          b.classList.remove('active');
+          b.setAttribute('aria-selected', 'false');
+        });
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+
+        const category = btn.getAttribute('data-category');
+
+        productCards.forEach(card => {
+          const cardCategory = card.getAttribute('data-category');
+          if (category === 'all' || cardCategory === category) {
+            card.style.display = 'flex';
+            card.style.opacity = '0';
+            setTimeout(() => {
+              card.style.opacity = '1';
+              card.style.transition = 'opacity 0.25s ease';
+            }, 10);
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // 5. ORDER BAG STATE & WHATSAPP GENERATION
+    let orderBag = [];
+
+    const cartBackdrop = document.getElementById('cartBackdrop');
+    const cartDrawer = document.getElementById('cartDrawer');
+    const headerCartCount = document.getElementById('headerCartCount');
+    const cartEmptyState = document.getElementById('cartEmptyState');
+    const cartItemsList = document.getElementById('cartItemsList');
+    const cartDrawerFooter = document.getElementById('cartDrawerFooter');
+    const cartTotalPrice = document.getElementById('cartTotalPrice');
+
+    document.getElementById('openCartBtn').addEventListener('click', openCart);
+
+    function openCart() {
+      cartBackdrop.classList.add('active');
+      cartDrawer.classList.add('active');
+    }
+
+    function closeCart() {
+      cartBackdrop.classList.remove('active');
+      cartDrawer.classList.remove('active');
+    }
+
+    function addToCart(id, name, price, img) {
+      const existing = orderBag.find(item => item.id === id);
+      if (existing) {
+        existing.quantity += 1;
+      } else {
+        orderBag.push({ id, name, price, img, quantity: 1 });
+      }
+      renderCart();
+      showToast(`Added ${name} to your Order Bag!`);
+    }
+
+    function updateQuantity(id, delta) {
+      const item = orderBag.find(i => i.id === id);
+      if (!item) return;
+      item.quantity += delta;
+      if (item.quantity <= 0) {
+        orderBag = orderBag.filter(i => i.id !== id);
+      }
+      renderCart();
+    }
+
+    function renderCart() {
+      const totalCount = orderBag.reduce((sum, item) => sum + item.quantity, 0);
+      headerCartCount.textContent = totalCount;
+
+      if (orderBag.length === 0) {
+        cartEmptyState.style.display = 'block';
+        cartItemsList.style.display = 'none';
+        cartDrawerFooter.style.display = 'none';
+      } else {
+        cartEmptyState.style.display = 'none';
+        cartItemsList.style.display = 'flex';
+        cartDrawerFooter.style.display = 'block';
+
+        cartItemsList.innerHTML = '';
+        let totalCost = 0;
+
+        orderBag.forEach(item => {
+          totalCost += item.price * item.quantity;
+          const li = document.createElement('li');
+          li.className = 'cart-item';
+          li.innerHTML = `
+            <img src="${item.img}" alt="${item.name}" class="cart-item-img" />
+            <div class="cart-item-info">
+              <div class="cart-item-name">${item.name}</div>
+              <div class="cart-item-price tabular-nums">₹${item.price}</div>
+            </div>
+            <div class="cart-qty-controls">
+              <button class="cart-qty-btn" onclick="updateQuantity('${item.id}', -1)" aria-label="Decrease quantity">−</button>
+              <span class="cart-qty-num tabular-nums">${item.quantity}</span>
+              <button class="cart-qty-btn" onclick="updateQuantity('${item.id}', 1)" aria-label="Increase quantity">+</button>
+            </div>
+          `;
+          cartItemsList.appendChild(li);
+        });
+
+        cartTotalPrice.textContent = '₹' + totalCost.toLocaleString('en-IN');
+      }
+    }
+
+    function sendWhatsAppOrder() {
+      if (orderBag.length === 0) return;
+      let text = 'Hello Artisan Crumb Bakery! I would like to place an order:%0A%0A';
+      let total = 0;
+      orderBag.forEach((item, idx) => {
+        text += `${idx + 1}. ${item.name} (Qty: ${item.quantity}) - ₹${item.price * item.quantity}%0A`;
+        total += item.price * item.quantity;
+      });
+      text += `%0A*Estimated Total:* ₹${total.toLocaleString('en-IN')}%0A`;
+      text += `*Location:* Indiranagar / Bengaluru%0A%0APlease confirm availability & payment details. Thank you!`;
+
+      const whatsappUrl = `https://wa.me/919876543210?text=${text}`;
+      window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+    }
+
+    // 6. TESTIMONIALS CAROUSEL
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.testimonial-slide');
+    const dots = document.querySelectorAll('.carousel-dot');
+
+    function showSlide(index) {
+      if (index >= slides.length) index = 0;
+      if (index < 0) index = slides.length - 1;
+      currentSlide = index;
+
+      slides.forEach((s, i) => {
+        s.classList.toggle('active', i === currentSlide);
+      });
+      dots.forEach((d, i) => {
+        d.classList.toggle('active', i === currentSlide);
+      });
+    }
+
+    function nextTestimonial() {
+      showSlide(currentSlide + 1);
+    }
+
+    function prevTestimonial() {
+      showSlide(currentSlide - 1);
+    }
+
+    function goToTestimonial(idx) {
+      showSlide(idx);
+    }
+
+    let carouselTimer = setInterval(nextTestimonial, 7000);
+    const testimonialContainer = document.querySelector('.testimonials-container');
+    testimonialContainer.addEventListener('mouseenter', () => clearInterval(carouselTimer));
+    testimonialContainer.addEventListener('mouseleave', () => carouselTimer = setInterval(nextTestimonial, 7000));
+
+    // 7. CONTACT FORM SUBMISSION WITH TOAST
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('contactName').value.trim();
+      const email = document.getElementById('contactEmail').value.trim();
+      const submitBtn = document.getElementById('submitFormBtn');
+
+      if (!name || !email) {
+        showToast('Please fill in your name and email address.');
+        return;
+      }
+
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span>Sending Inquiry...</span>';
+
+      setTimeout(() => {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = `
+          <span>Message Sent!</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+        `;
+        showToast(`Thank you, ${name}! Your inquiry has been sent to Chef Vikram. We'll reply shortly.`);
+        document.getElementById('contactForm').reset();
+
+        setTimeout(() => {
+          submitBtn.innerHTML = `
+            <span>Send Message</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+          `;
+        }, 4000);
+      }, 700);
+    }
+
+    function handleNewsletterSubmit(e) {
+      e.preventDefault();
+      const email = document.getElementById('newsletterEmail').value.trim();
+      if (!email) return;
+      showToast('You are now subscribed to our limited weekend drop alerts!');
+      document.getElementById('newsletterEmail').value = '';
+    }
+
+    // 8. TOAST SYSTEM
+    let toastTimeout;
+    function showToast(msg) {
+      const toast = document.getElementById('toastNotification');
+      const toastText = document.getElementById('toastMessage');
+      toastText.textContent = msg;
+      toast.classList.add('active');
+
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        toast.classList.remove('active');
+      }, 4500);
+    }
+
+    // 9. FLOATING WHATSAPP ASSISTANT
+    const whatsappPopover = document.getElementById('whatsappPopover');
+    function toggleWhatsAppPopover() {
+      whatsappPopover.classList.toggle('open');
+    }
+
+    function launchWhatsApp(message) {
+      const url = `https://wa.me/919876543210?text=${encodeURIComponent(message)}`;
+      window.open(url, '_blank', 'noopener,noreferrer');
+      whatsappPopover.classList.remove('open');
+    }
+
+    document.addEventListener('click', (e) => {
+      const fabContainer = document.querySelector('.floating-whatsapp-container');
+      if (fabContainer && !fabContainer.contains(e.target)) {
+        whatsappPopover.classList.remove('open');
+      }
+    });
+
+    // 10. SCROLL TO TOP
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+</body>
+</html>
